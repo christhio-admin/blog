@@ -1,0 +1,48 @@
+---
+---
+
+$base-font-size: 18px;
+$base-line-height: 1.6;
+
+$text-color: #3e3a3a;
+
+$content-width: 700px;
+
+@import "minima";
+
+.page-content {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.post-list h3 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.post-link {
+	@include relative-font-size(2);
+	
+	@include media-query($on-palm) {
+		@include relative-font-size(1.6);
+    }
+}
+
+.post-meta {
+	@include relative-font-size(0.9);
+}
+
+.post-title {
+	font-weight: bold;
+	@include relative-font-size(2.5);
+	
+	@include media-query($on-palm) {
+		@include relative-font-size(2);
+    }
+}
+
+.footer-heading {
+	font-size: 14px;
+	color: $grey-color;
+	margin-bottom: 0;
+}
